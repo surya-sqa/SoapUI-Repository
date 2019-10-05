@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="0642e829-d3d6-442c-b5fa-d7c4b155593c" activeEnvironment="Default environment" name="REST_StudentProj" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="2.8.2 2019-08-27T17:04:01Z" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="0cd1af74-45b0-4d83-9348-79fbe2ffcdb9" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://thetestingworldapi.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://Surya:8089/</con:endpoint><con:endpoint>http://thetestingworldapi.com</con:endpoint></con:endpoints><con:resource name="StudentsDetails" path="/api/studentsDetails" id="503b65b2-6fb5-4289-b563-55637e3157e2"><con:settings/><con:parameters/><con:method name="StudentsDetails 1" id="5b0df506-d84d-420a-885b-1cf5c96e8213" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200 201</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" id="9ecc252e-3289-4398-9580-d065f475b3da" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://Surya:8081</con:endpoint><con:request>{
+  
+  "first_name": "Surya",
+  "middle_name": "Ram",
+  "last_name": "K",
+  "date_of_birth": "05/06/90"
+}</con:request><con:originalUri>http://thetestingworldapi.com/api/studentsDetails</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="5b842a72-70a0-4ec4-a8e9-13ae76fe5b2b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://thetestingworldapi.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://thetestingworldapi.com</con:endpoint></con:endpoints><con:resource name="Technicalskills" path="/api/technicalskills" id="2f177a49-c30b-4224-bbfe-ff1b565fddaf"><con:settings/><con:parameters/><con:method name="Technicalskills 1" id="8ee407f6-4149-4608-9915-2163d7b7c3e0" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:tec="http://thetestingworldapi.com/api/technicalskills">tec:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="4b3762f2-6b93-439a-8579-437bfd0feef5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://thetestingworldapi.com</con:endpoint><con:request>{
+  "id": 3668,
+  "language": [
+    "C++",
+    "Java"
+  ],
+  "yearexp": "8+",
+  "lastused": "1month",
+  "st_id": "1233"
+}</con:request><con:originalUri>http://thetestingworldapi.com/api/technicalskills</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="b996d95c-7e14-4f56-8842-49b6332d7b97" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://thetestingworldapi.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://thetestingworldapi.com</con:endpoint></con:endpoints><con:resource name="Addresses" path="/api/addresses" id="6b05a599-3956-4cd5-b7f9-fcd33022d270"><con:settings/><con:parameters/><con:method name="Addresses 1" id="f6616602-2ccb-4246-a3bc-0f41883a061b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://thetestingworldapi.com/api/addresses">add:Response</con:element></con:representation><con:request name="Request 1" id="ddb031b9-eed3-447b-96a6-29d226cbb353" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://thetestingworldapi.com</con:endpoint><con:request>{
+  "Permanent_Address": {
+    "House_Number": "1-1-2",
+    "City": "HYD",
+    "State": "TS",
+    "Country": "IND",
+    "PhoneNumber": [
+      {
+        "Std_Code": "040",
+        "Home": "24645454",
+        "Mobile": "9618826545"
+      },
+      {
+        "Std_Code": "040",
+        "Home": "54878454",
+        "Mobile": "986554455"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "2-3-8",
+    "City": "HYD",
+    "State": "TS",
+    "Country": "IND",
+    "PhoneNumber": [
+      {
+        "Std_Code": "040",
+        "Home": "254545454",
+        "Mobile": "9875465565"
+      },
+      {
+        "Std_Code": "040",
+        "Home": "5454541554",
+        "Mobile": "98566654"
+      }
+    ]
+  },
+  "stId": "3854"
+}</con:request><con:originalUri>http://thetestingworldapi.com/api/addresses</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="91fd6433-2277-467e-a455-e791fa52f9e5" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://thetestingworldapi.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://thetestingworldapi.com</con:endpoint></con:endpoints><con:resource name="FinalStudentDetails" path="/api/FinalStudentDetails/{StudentID}" id="7375ffca-706c-4692-9601-567ae45c0894"><con:settings/><con:parameters><con:parameter><con:name>StudentID</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="FinalStudentDetails 1" id="5791605a-9253-44dd-b711-bbc09dab666f" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:fin="http://thetestingworldapi.com/api/FinalStudentDetails">fin:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:fin="http://thetestingworldapi.com/api/FinalStudentDetails">fin:Response</con:element></con:representation><con:request name="Request 1" id="4532f302-1d46-4667-a54f-fbda81446dda" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://thetestingworldapi.com</con:endpoint><con:request/><con:originalUri>http://thetestingworldapi.com/api/FinalStudentDetails</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="StudentID" value="259" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>StudentID</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="96f98447-b672-482b-a005-c80978114851" name="TestSuite_StudentInfo"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="e0032d8d-ee9f-4700-8b33-7278a17571fc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase_E2EProcess" searchProperties="true"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="AddNewStudent" id="eb8a81a3-bdc9-409a-9be2-bfb80c76a0ae"><con:settings/><con:config service="http://thetestingworldapi.com" resourcePath="/api/studentsDetails" methodName="StudentsDetails 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddNewStudent" id="9ecc252e-3289-4398-9580-d065f475b3da" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://thetestingworldapi.com</con:endpoint><con:request>{\r
+   "first_name" : "${#TestCase#FNM}",\r
+   "middle_name" : "${#TestCase#MNM}",\r
+   "last_name" : "${#TestCase#LNM}",\r
+   "date_of_birth" : "${#TestCase#DOB}"\r
+}</con:request><con:originalUri>http://thetestingworldapi.com/api/studentsDetails</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="FetchID" id="6d27d249-6af9-4f9e-afe5-0b8cd838feed" disabled="true"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+//json_s = new JsonSlurper()
+resp = context.expand('${AddNewStudent#Response}')
+res_json = new JsonSlurper().parseText(resp)
+
+
+def ID = String.valueOf(res_json.id)
+log.info ID
+
+req = context.expand('${AddAddress#Request}')
+req_json = new JsonSlurper().parseText(req)
+
+log.info req_json.stId
+context.testCase.setPropertyValue("ID", String.valueOf(res_json.id))
+
+//req_json.setNodeValue("$.stId", String.valueOf(req_json.stId))</script></con:config></con:testStep><con:testStep type="groovy" name="DD_JSON_Groovy" id="ecf4ee76-9485-4a38-861f-530646a654b9"><con:settings/><con:config><script>import jxl.*;
+import groovy.json.JsonSlurper;
+import com.eviware.soapui.support.GroovyUtils;
+
+def fi = new File("C:\\SoupUI_18Dec2018\\TestData.xls");
+def wk = Workbook.getWorkbook(fi);
+def st = wk.getSheet(3);
+def rows = st.getRows();
+for (def i=1;i&lt;rows;i++)
+{
+def e1 = st.getCell(0,i).getContents();
+def e2 = st.getCell(1,i).getContents();
+def e3 = st.getCell(2,i).getContents();
+def e4 = st.getCell(3,i).getContents();
+
+context.testCase.setPropertyValue("FNM", e1)
+context.testCase.setPropertyValue("MNM", e2)
+context.testCase.setPropertyValue("LNM", e3)
+context.testCase.setPropertyValue("DOB", e4)
+
+testRunner.runTestStepByName("AddNewStudent")
+
+def res = context.expand('${AddNewStudent#Response}')
+def slurp = new JsonSlurper()
+def resjson = slurp.parseText(res)
+context.testCase.setPropertyValue("ID", String.valueOf(resjson.id))
+
+testRunner.runTestStepByName("AddTechnicalSkills")
+testRunner.runTestStepByName("AddAddress")
+testRunner.runTestStepByName("FetchDetails")
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="AddTechnicalSkills" id="81518c7a-cccf-4ac3-b909-2c6c4e99924f"><con:settings/><con:config service="http://thetestingworldapi.com" resourcePath="/api/technicalskills" methodName="Technicalskills 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddTechnicalSkills" id="4b3762f2-6b93-439a-8579-437bfd0feef5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://thetestingworldapi.com</con:endpoint><con:request>{
+  
+  "language": [
+    "C++",
+    "Java"
+  ],
+  "yearexp": "8+",
+  "lastused": "1month",
+  "st_id": "${#TestCase#ID}"
+}</con:request><con:originalUri>http://thetestingworldapi.com/api/technicalskills</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="AddAddress" id="3229f177-1c25-4a70-b9db-5fb677e4a0b5"><con:settings/><con:config service="http://thetestingworldapi.com" resourcePath="/api/addresses" methodName="Addresses 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddAddress" id="ddb031b9-eed3-447b-96a6-29d226cbb353" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://thetestingworldapi.com</con:endpoint><con:request>{
+  "Permanent_Address": {
+    "House_Number": "1-1-2",
+    "City": "HYD",
+    "State": "TS",
+    "Country": "IND",
+    "PhoneNumber": [
+      {
+        "Std_Code": "040",
+        "Home": "24645454",
+        "Mobile": "9618826545"
+      },
+      {
+        "Std_Code": "040",
+        "Home": "54878454",
+        "Mobile": "986554455"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "2-3-8",
+    "City": "HYD",
+    "State": "TS",
+    "Country": "IND",
+    "PhoneNumber": [
+      {
+        "Std_Code": "040",
+        "Home": "254545454",
+        "Mobile": "9875465565"
+      },
+      {
+        "Std_Code": "040",
+        "Home": "5454541554",
+        "Mobile": "98566654"
+      }
+    ]
+  },
+  "stId": "${#TestCase#ID}"
+}</con:request><con:originalUri>http://thetestingworldapi.com/api/addresses</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="FetchDetails" id="9f1e42f2-0862-43ef-ad0a-e186a627de6d"><con:settings/><con:config service="http://thetestingworldapi.com" resourcePath="/api/FinalStudentDetails/{StudentID}" methodName="FinalStudentDetails 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="FetchDetails" id="4532f302-1d46-4667-a54f-fbda81446dda" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://thetestingworldapi.com</con:endpoint><con:request/><con:originalUri>http://thetestingworldapi.com/api/FinalStudentDetails</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="StudentID" value="${#TestCase#ID}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>StudentID</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>ID</con:name><con:value>144111</con:value></con:property><con:property><con:name>FNM</con:name><con:value>Madana</con:value></con:property><con:property><con:name>MNM</con:name><con:value>Teja</con:value></con:property><con:property><con:name>LNM</con:name><con:value>KK</con:value></con:property><con:property><con:name>DOB</con:name><con:value>01/01/2008</con:value></con:property></con:properties><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:restMockService id="0dfde6c9-4491-4f32-b81c-17494611c749" port="8081" path="/" host="localhost" name="StudentMockService" docroot=""><con:settings/><con:properties/><con:headerValidator/><con:restMockAction name="/api/studentsDetails" method="POST" resourcePath="/api/studentsDetails" id="4673246a-2526-48f5-8cac-8babcc892a74"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="cbd393da-476f-4640-b54e-cebb81ad51b3" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+  "ID":"455654",
+  "first_name": "Surya",
+  "middle_name": "Ram",
+  "last_name": "K",
+  "date_of_birth": "05/06/90"
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:authRepository/><con:tags/></con:soapui-project>
